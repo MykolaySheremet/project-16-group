@@ -38,12 +38,38 @@ address {
     text-decoration: none;
 }
 
-// .section {
-//     padding-top: 60px;
-//     padding-bottom: 60px;
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
 
-//     @media screen and(min-width: 1200px) {
-//         padding-top: 94px;
-//         padding-bottom: 94px;
-//     }
-// }
+    @media screen and(min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and(min-width: 768px) {
+        width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    @media screen and(min-width: 1366px) {
+        width: 1366px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0000);
+    overflow: hidden;
+}
