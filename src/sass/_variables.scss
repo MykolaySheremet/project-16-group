@@ -1,0 +1,25 @@
+:root {
+  // тёмный текст и фон мобильного меню
+  --primary-text-color: #111518;
+
+  // серый светлый текст (а также border в about и в guarantee)
+  --secondary-light-text-color: #b9b9b9;
+
+  // серый тёмный текст и огонь (текст в guarantee, текст в reviews, огонь в problems)
+  --secondary-dark-text-color: #3d3d3d;
+
+  // белый текст
+  --text-color-theme-dark: #ffffff;
+
+  // оранжевый акцент
+  --accent-color: #ff6b09;
+
+  // синяя иконка соц.сети в reviews
+  --social-color: #436eab;
+
+  // серый тёмный фон в guarantee
+  --background-dark: #f1f1f1;
+
+  // чёрный бургер в мобильном меню
+  --burger-color: #000000;
+}
