@@ -1,6 +1,7 @@
 .hero { 
     padding-top: 40px;
     padding-bottom: 80px;
+    background-color: var(--background-dark);
     @media screen and (min-width: 768px) {
             width: 768px;
             padding-top: 80px;
@@ -12,6 +13,7 @@
             padding-bottom: 80px;
         }
 }
+
 .hero__title {
     width: 280px;
     margin-bottom: 8px;
@@ -22,7 +24,7 @@
     font-size: 20px;
     line-height: 26px;
     letter-spacing: 0.03em;
-    color: #111518;
+    color: var(--primary-text-color);
 
     @media screen and (min-width: 768px) {
         font-size: 26px;
@@ -46,7 +48,7 @@
     font-size: 14px;
     line-height: 22px;
     letter-spacing: 0.08em;
-    color: #111518;
+    color: var(--primary-text-color);
     
     @media screen and (min-width: 1200px) {
         font-size: 20px;
@@ -61,7 +63,7 @@
 }
 
 .hero__points {
-    color: #FF6B09;
+    color: var(--accent-color);
 }
 
 .hero__btn {
@@ -84,7 +86,7 @@
     text-decoration: none;
     
     color: #FFFFFF;
-    background: #FF6B09;
+    background: var(--accent-color);
 
     
     @media screen and (min-width: 1200px) {
@@ -119,27 +121,26 @@
 }
 
 .hero__list {
+    width: 280px;
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     
-    padding: 0;
-
     @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+    }
+
+    @media screen and (min-width: 1200px) {
         display: flex;
         flex-direction: row;
     }
 }
 
 .hero__list-link {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 23px;
-    letter-spacing: 0.08em;
-    color: #111518;
+    display: flex;
+    align-items: center;
+    
 
     &:not(:last-child) {
         margin-bottom: 31px;
@@ -150,5 +151,20 @@
         line-height: 33px;
         }
 
+}
+
+.hero__list-text {
+    width: 208px;
+    margin-left: 12px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0.08em;
+    color: var(--primary-text-color);
+}
+
+.hero__list-icon {
+    position: relative;
+    width: 60px;
+    height: 60px;
 }
 
