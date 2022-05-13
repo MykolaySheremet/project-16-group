@@ -7,6 +7,7 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   background-color: #E5E5E5;
+  margin: 0;
 }
 
 h1,
@@ -86,7 +87,29 @@ address {
   overflow: hidden;
 }
 
+.hero {
+  width: 480px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    padding-top: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+}
+
 .hero__title {
+  width: 280px;
   margin-bottom: 8px;
   font-family: 'Montserrat';
   font-weight: 800;
@@ -111,6 +134,7 @@ address {
 }
 
 .hero__info {
+  width: 280px;
   margin-bottom: 48px;
   font-family: 'Montserrat';
   font-style: normal;
@@ -138,7 +162,8 @@ address {
 }
 
 .hero__btn {
-  padding: 27px 70px;
+  padding: 14px 70px;
+  margin-bottom: 40px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -162,12 +187,15 @@ address {
   .hero__btn {
     font-size: 14px;
     line-height: 17px;
+    padding: 27px 70px;
   }
 }
 
 .hero__image {
   width: 208px;
-  height: 150px;
+  height: 178px;
+  margin-bottom: 100px;
+  margin-left: 56px;
   background-image: url("../images/hero_mobile.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -191,6 +219,7 @@ address {
 }
 
 .hero__list {
+  list-style: none;
   padding: 0;
   display: block;
 }
