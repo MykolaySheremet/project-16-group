@@ -1,0 +1,108 @@
+.section-contacts {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: gray;
+}
+
+.contacts__title {
+    margin-bottom: 24px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.contacts-form__title {
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: #FFFFFF;
+}
+
+.contacts__title-wordcolor {
+    color: #FF6B09;
+}
+
+.contacts-form__input {
+    display: block;
+    height: 48px;
+    width: 100%;
+    padding: 15px 28px;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.08em;
+
+    &::placeholder {
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 0.08em;
+    }
+
+    @media screen and(min-width:480px) {
+        width: 336px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px 24px;
+    }
+
+    @media screen and(min-width:1680px) {
+        width: 528px;
+        padding: 23px 24px;
+    }
+
+}
+
+// &:invalid {
+//     border: 1px solid red;
+
+.contacts-form__inputname {
+    margin-bottom: 20px;
+}
+
+.contacts-form__inputtel {
+    margin-bottom: 40px;
+
+    @media screen and(min-width:768px) {
+        margin-bottom: 32px;
+    }
+
+}
+
+.contacts-form__button {
+    display: block;
+    border: none;
+    padding: 14px 10px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    text-align: center;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #FF6B09;
+    cursor: pointer;
+
+    @media screen and(min-width:480px) {
+        max-width: 336px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 14px 10px;
+    }
+
+    @media screen and(min-width:1680px) {
+        max-width: 528px;
+        padding: 26px 10px;
+    }
+}

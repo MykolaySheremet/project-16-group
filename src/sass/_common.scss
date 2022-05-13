@@ -1,8 +1,13 @@
-.body {
+body, 
+button,
+input,
+textarea {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     background-color: #E5E5E5;
 }
+
+
 
 h1,
 h2,
@@ -43,6 +48,7 @@ address {
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
+    outline: 1px solid blue;
 
     @media screen and(min-width: 480px) {
         width: 480px;
@@ -54,8 +60,8 @@ address {
         padding-right: 32px;
     }
 
-    @media screen and(min-width: 1366px) {
-        width: 1366px;
+    @media screen and(min-width: 1680px) {
+        width: 1680px;
         padding-left: 16px;
         padding-right: 16px;
     }
