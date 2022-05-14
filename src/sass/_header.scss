@@ -10,9 +10,8 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition-property: opacity;
-    transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-timing-function: 250ms;
+
+    transition: opacity, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 }
 
 .mobile-menu.is-open {
@@ -46,9 +45,8 @@
 
 .mobile_menu__close-icon {
     fill: var(--text-color-theme-dark);
-    transition-property: fill;
-    transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-timing-function: 250ms;
+
+    transition: fill, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 
     &:hover,
     &:focus {
@@ -68,7 +66,6 @@
 }
 
 .mobile-menu__nav-link {
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
@@ -76,9 +73,7 @@
     letter-spacing: 0.03em;
     color: var(--text-color-theme-dark);
 
-    transition-property: color;
-    transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-timing-function: 250ms;
+    transition: color, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 
     &:hover,
     &:focus {
@@ -88,14 +83,13 @@
 
 .mobile-menu__button {
     width: 280px;
-    height: 48.53px;
+    height: 48px;
     border: 2px solid var(--accent-color);
     background-color: transparent;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
 
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -107,6 +101,13 @@
     text-transform: uppercase;
 
     color: var(--accent-color);
+
+    transition: color, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
+    
+        &:hover,
+        &:focus {
+            color: #FF6500;
+        }
 }
 
 .header__container {
@@ -122,11 +123,9 @@
     border: none;
     line-height: 0;
     cursor: pointer;
-
     fill: var(--burger-color);
-    transition-property: fill;
-    transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-timing-function: 250ms;
+
+    transition: fill, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 
     &:hover,
     &:focus {
@@ -188,7 +187,6 @@
         background-color: transparent;
         margin-left: 255px;
 
-        font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
@@ -243,7 +241,6 @@
     }
 
     .header__nav-link {
-        font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
@@ -255,9 +252,7 @@
         text-transform: uppercase;
         color: var(--secondary-light-text-color);
 
-        transition-property: color;
-        transition-duration: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-timing-function: 250ms;
+        transition: color, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 
         &:hover,
         &:focus {
