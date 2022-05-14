@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEADER</title>
+</head>
+<body>
+
+<!--section header-->
+    <header class="header">
+        <div class="container header__container">
+            <nav class="header__navigation">
+                <a href="./index.html#hero" class="logo-black">
+                    <svg class="header__logo-light" width="128" height="45">
+                        <use href="./images/symbol-defs-min.svg#icon-logo-black"></use>
+                    </svg>
+                </a>
+                <ul class="header__nav-list list">
+                    <li class="header__nav-item">
+                        <a href="#program" class="header__nav-link link">Studying program</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#about" class="header__nav-link link">about</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#howwedo" class="header__nav-link link">training options</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#contacts" class="header__nav-link link">contacts</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="header__button" type="button">consultation by phone</button>
+
+            <button class="header__burger-button" type="button" data-menu-open>
+                <svg class="header__burger-icon" width="21" height="12">
+                    <use href="./images/symbol-defs-min.svg#icon-burger"></use>
+                </svg>
+            </button>
+        </div>
+
+<!--mobile menu section-->
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__close-button" type="button" data-menu-close>
+                    <svg class="mobile_menu__close-icon" width="16" height="16">
+                        <use href="./images/symbol-defs-min.svg#icon-close"></use>
+                    </svg>
+                </button>
+
+                <nav class="mobile-menu__navigation">
+                    <a href="" class="logo-white">
+                        <svg class="mobile-menu__logo-white" width="128" height="45">
+                            <use href="./images/symbol-defs-min.svg#icon-logo-white"></use>
+                        </svg>
+                    </a>
+                    <ul class="mobile-menu__nav-list list">
+                        <li class="mobile-menu__nav-item">
+                            <a href="#program" class="mobile-menu__nav-link link">Studying program</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="#about" class="mobile-menu__nav-link link">About</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="#howwedo" class="mobile-menu__nav-link link">Training options</a>
+                        </li>
+                        <li class="mobile-menu__nav-item">
+                            <a href="#contacts" class="mobile-menu__nav-link link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <button class="mobile-menu__button" type="button">
+                    <a href="./index.html#contacts"></a>
+                    consultation by phone
+                </button>
+            </div>
+        </div>
+    </header>
+    <script src="./js/mobile-menu.js"></script>
+</body>
+</html>
