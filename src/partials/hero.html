@@ -1,43 +1,54 @@
     <section class="hero">
         <div class="container">
             
-            <div class="hero__morph"></div>
-
             <div class="hero__thumb">
             <div class="hero__info">
             <h1 class="hero__title">Complex preparation for English UPE</h1>
             <p class="hero__guarantee">
                 <span class="hero__span">It won't be easy.</span> <br>
-                But you're guaranteed to get <br>
+                But you're guaranteed to get
                 <span class="hero__points">+25 points</span>
             </p>
     
             <a href="#" class="hero__btn">I want a free lesson</a>
             </div>
     
-            <div class="hero__image"></div>
+            <!--<div class="hero__image"></div>-->
+            
+            <picture>
+                <source srcset="./images/hero.webp 1x, ./images/hero@2x.webp 2x" media="min-width: 1200px"
+                    type="image/webp">
+                <source srcset="./images/hero.png 1x, ./images/hero@2x.png 2x" media="min-width: 1200px">
+                <source srcset="./images/hero_tablet.webp 1x, ./images/hero@2x.webp 2x" media="min-width: 768px"
+                    type="image/webp">
+                <source srcset="./images/hero_tablet.png 1x, ./images/hero_tablet@2x.png 2x" media="min-width: 768px">
+                <source srcset="./images/hero_mobile.webp 1x, ./images/hero_mobile@2x.webp 2x" media="max-width: 767px"
+                    type="image/webp">
+                <source srcset="./images/hero_mobile.png 1x, ./images/hero_mobile@2x.png 2x" media="max-width: 767px">
+                <img src="./images/hero.png" alt="Teacher's photo" width="208" height="178" class="hero__image">
+            </picture>
             </div>
-    
+            
             <ul class="hero__list list">
                 <li class="hero__list-link">
                     <svg width="60px" height="60px" class="hero__list-icon">
                         <use href="./images/symbol-defs-min.svg#icon-hero-human"></use>
                     </svg>
-                    <p class="hero__list-text">Adapted author's UPE program</p>
+                    <p class="hero__list-text">Adapted author's <br> UPE program</p>
                 </li>
 
                 <li class="hero__list-link">
                     <svg width="60px" height="60px" class="hero__list-icon">
                         <use href="./images/symbol-defs-min.svg#icon-hero-mobile"></use>
                     </svg>
-                    <p class="hero__list-text">Modern teaching methods</p>
+                    <p class="hero__list-text">Modern <br> teaching methods</p>
                 </li>
 
                 <li class="hero__list-link">
                     <svg width="60px" height="60px" class="hero__list-icon">
                         <use href="./images/symbol-defs-min.svg#icon-hero-finances"></use>
                     </svg>
-                    <p class="hero__list-text">Financial guarantee the result</p>
+                    <p class="hero__list-text">Financial guarantee <br> the result</p>
                 </li>
             </ul>
 
