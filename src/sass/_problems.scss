@@ -179,6 +179,6 @@
     color: var(--accent-color);
     counter-increment: item-counter;
     white-space: pre;
-    content: '0' counter(item-counter) '\0a';
+    content: '&#8212 0' counter(item-counter) '\0a';
   }
 }
