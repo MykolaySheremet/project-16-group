@@ -5,10 +5,22 @@
     </h2>
     <article class="feed-back">
     <div class="reviews__customer">
+
         <picture>
-        <source srcset="images/ellipse-6.jpg 1x, images/ellipse-6-2x.jpg 2x"/>
-        <img class="customer__photo" src="images/ellipse-6.jpg" alt="Tonya Kucherovskaya">
+            <source srcset="./images/ellipse-big_webp.webp 1x, ./images/ellipse-big-2x_webp.webp 2x" media="(min-width: 768px)"
+                type="image/webp" />
+            <source srcset="./images/ellipse-big.jpg 1x, ./images/ellipse-big-2x.jpg 2x" media="(min-width: 768px)" />
+        
+            <source srcset="./images/ellipse-big-mobile_webp.webp 1x, ./images/ellipse-big-mobile2x_webp.webp 2x" media="(max-width: 767px)"
+                type="image/webp" />
+            <source srcset="./images/ellipse-big-mobile.jpg 1x, ./images/ellipse-big-mobile2x.jpg 2x" media="(max-width: 767px)" />
+        
+        
+            <img class="customer__photo" src="images/ellipse-big-mobile.jpg" alt="Tonya Kucherovskaya">
         </picture>
+
+
+
         <svg class="customer__social-icon"><use href="images/symbol-defs-min.svg#icon-vk"></use></svg>
 
     </div>
