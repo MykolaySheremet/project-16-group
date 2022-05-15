@@ -1,38 +1,28 @@
 .benefits {
-  background-color: var(--primary-text-color);
-}
-
-.benefits .container {
-  position: relative;
-
   @media screen and (max-width: 767px) {
-    margin-top: -459px;
+    padding-top: 24px;
+    background-image: linear-gradient(
+      to bottom,
+      var(--primary-text-color) 460px,
+      var(--text-color-theme-dark) 269px
+    );
   }
 
   @media screen and (min-width: 768px) and (max-width: 1679px) {
-    margin-top: -184px;
+    padding-top: 24px;
+    background-image: linear-gradient(
+      to bottom,
+      var(--primary-text-color) 226px,
+      var(--text-color-theme-dark) 226px
+    );
   }
 
   @media screen and (min-width: 1680px) {
-    margin-top: -199px;
-  }
-}
-
-.container {
-  padding-top: 24px;
-  padding-left: 0px;
-  padding-right: 0px;
-
-  @media screen and (max-width: 767px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1679px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1680px) {
-    width: 1680px;
+    background-image: linear-gradient(
+      to bottom,
+      var(--primary-text-color) 199px,
+      var(--text-color-theme-dark) 183px
+    );
   }
 }
 
@@ -98,6 +88,7 @@
 }
 
 .benefits__item {
+  position: relative;
   margin-bottom: 40px;
   font-weight: 700;
   line-height: 1.43;
@@ -107,20 +98,42 @@
 
   @media screen and (max-width: 767px) {
     font-size: 14px;
+    &::after {
+      top: 9px;
+      width: 20px;
+      height: 2px;
+    }
   }
 
   @media screen and (min-width: 768px) and (max-width: 1679px) {
     font-size: 14px;
+    &::after {
+      top: 9px;
+      width: 20px;
+      height: 2px;
+    }
   }
 
   @media screen and (min-width: 1680px) {
     font-size: 20px;
+    &::after {
+      top: 13px;
+      width: 22px;
+      height: 3px;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    background: var(--accent-color);
   }
 
   &::before {
     color: var(--accent-color);
     counter-increment: item-counter;
     white-space: pre;
-    content: '0' counter(item-counter) '\0a';
+    content: '     0' counter(item-counter) '\0a';
   }
 }

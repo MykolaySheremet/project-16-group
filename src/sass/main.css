@@ -687,18 +687,21 @@ address {
 
 @media screen and (max-width: 767px) {
   .problems {
+    padding-top: 24px;
     background-image: linear-gradient(to bottom, var(--primary-text-color) 545px, var(--text-color-theme-dark) 197px);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1679px) {
   .problems {
+    padding-top: 40px;
     background-image: linear-gradient(to bottom, var(--primary-text-color) 340px, var(--text-color-theme-dark) 129px);
   }
 }
 
 @media screen and (min-width: 1680px) {
   .problems {
+    padding-top: 80px;
     position: relative;
     background-image: linear-gradient(to bottom, var(--primary-text-color) 560px, var(--text-color-theme-dark) 132px);
   }
@@ -722,34 +725,6 @@ address {
     position: absolute;
     right: 0px;
     bottom: 112px;
-  }
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-@media screen and (max-width: 767px) {
-  .container {
-    width: 480px;
-    padding-top: 24px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1679px) {
-  .container {
-    width: 768px;
-    padding-top: 40px;
-  }
-}
-
-@media screen and (min-width: 1680px) {
-  .container {
-    width: 1680;
-    padding-top: 80px;
   }
 }
 
@@ -836,7 +811,6 @@ address {
 }
 
 .problems__list {
-  list-style: none;
   counter-reset: item-counter;
 }
 
@@ -869,6 +843,7 @@ address {
 }
 
 .problems__item {
+  position: relative;
   font-weight: 700;
   letter-spacing: 0.08em;
   color: var(--primary-text-color);
@@ -880,6 +855,11 @@ address {
     font-size: 14px;
     line-height: 1.43;
   }
+  .problems__item::after {
+    top: 9px;
+    width: 20px;
+    height: 2px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1679px) {
@@ -887,6 +867,11 @@ address {
     margin-bottom: 24px;
     font-size: 14px;
     line-height: 1.43;
+  }
+  .problems__item::after {
+    top: 9px;
+    width: 20px;
+    height: 2px;
   }
 }
 
@@ -896,13 +881,25 @@ address {
     font-size: 20px;
     line-height: 1.4;
   }
+  .problems__item::after {
+    top: 13px;
+    width: 22px;
+    height: 3px;
+  }
+}
+
+.problems__item::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  background: var(--accent-color);
 }
 
 .problems__item::before {
   color: var(--accent-color);
   counter-increment: item-counter;
   white-space: pre;
-  content: "&#8212 0" counter(item-counter) "\a";
+  content: "     0" counter(item-counter) "\a";
 }
 
 .how__main_title {
@@ -1179,53 +1176,23 @@ address {
   margin-left: 11px;
 }
 
-.benefits {
-  background-color: var(--primary-text-color);
-}
-
-.benefits .container {
-  position: relative;
-}
-
 @media screen and (max-width: 767px) {
-  .benefits .container {
-    margin-top: -459px;
+  .benefits {
+    padding-top: 24px;
+    background-image: linear-gradient(to bottom, var(--primary-text-color) 460px, var(--text-color-theme-dark) 269px);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1679px) {
-  .benefits .container {
-    margin-top: -184px;
+  .benefits {
+    padding-top: 24px;
+    background-image: linear-gradient(to bottom, var(--primary-text-color) 226px, var(--text-color-theme-dark) 226px);
   }
 }
 
 @media screen and (min-width: 1680px) {
-  .benefits .container {
-    margin-top: -199px;
-  }
-}
-
-.container {
-  padding-top: 24px;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-@media screen and (max-width: 767px) {
-  .container {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1679px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1680px) {
-  .container {
-    width: 1680px;
+  .benefits {
+    background-image: linear-gradient(to bottom, var(--primary-text-color) 199px, var(--text-color-theme-dark) 183px);
   }
 }
 
@@ -1316,6 +1283,7 @@ address {
 }
 
 .benefits__item {
+  position: relative;
   margin-bottom: 40px;
   font-weight: 700;
   line-height: 1.43;
@@ -1327,11 +1295,21 @@ address {
   .benefits__item {
     font-size: 14px;
   }
+  .benefits__item::after {
+    top: 9px;
+    width: 20px;
+    height: 2px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1679px) {
   .benefits__item {
     font-size: 14px;
+  }
+  .benefits__item::after {
+    top: 9px;
+    width: 20px;
+    height: 2px;
   }
 }
 
@@ -1339,13 +1317,25 @@ address {
   .benefits__item {
     font-size: 20px;
   }
+  .benefits__item::after {
+    top: 13px;
+    width: 22px;
+    height: 3px;
+  }
+}
+
+.benefits__item::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  background: var(--accent-color);
 }
 
 .benefits__item::before {
   color: var(--accent-color);
   counter-increment: item-counter;
   white-space: pre;
-  content: "0" counter(item-counter) "\a";
+  content: "     0" counter(item-counter) "\a";
 }
 
 @media screen and (max-width: 767px) {
