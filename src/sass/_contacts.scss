@@ -175,6 +175,11 @@
     color: var(--text-color-theme-dark);
     background-color: var(--accent-color);
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,&:hover{
+        background-color: #FF6500;
+    }
 
     @media screen and(min-width:480px) {
         max-width: 450px;
