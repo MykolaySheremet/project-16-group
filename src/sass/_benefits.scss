@@ -124,6 +124,17 @@
     font-size: 20px;
   }
 
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 9px;
+    background: var(--accent-color);
+    width: 20px;
+    height: 2px;
+    align-items: center;
+  }
+
   &::before {
     color: var(--accent-color);
     counter-increment: item-counter;

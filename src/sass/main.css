@@ -830,7 +830,7 @@ address {
   }
 }
 
-.container {
+.problems .container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 0px;
@@ -838,21 +838,21 @@ address {
 }
 
 @media screen and (max-width: 767px) {
-  .container {
+  .problems .container {
     max-width: 480px;
     padding-top: 24px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1679px) {
-  .container {
+  .problems .container {
     width: 768px;
     padding-top: 40px;
   }
 }
 
 @media screen and (min-width: 1680px) {
-  .container {
+  .problems .container {
     width: 1680;
     padding-top: 80px;
   }
@@ -973,6 +973,7 @@ address {
 }
 
 .problems__item {
+  position: relative;
   font-weight: 700;
   letter-spacing: 0.08em;
   color: var(--primary-text-color);
@@ -1006,21 +1007,20 @@ address {
   content: '';
   position: absolute;
   left: 0px;
-  bottom: 12px;
+  top: 9px;
   background: var(--accent-color);
   width: 20px;
-  height: 4px;
+  height: 2px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .problems__item::before {
-  position: relative;
   color: var(--accent-color);
   counter-increment: item-counter;
   white-space: pre;
-  content: "0" counter(item-counter) "\a";
+  content: "     0" counter(item-counter) "\a";
 }
 
 .how__main_title {
@@ -1315,27 +1315,27 @@ address {
   }
 }
 
-.container {
+.benefits .container {
   padding-left: 0px;
   padding-right: 0px;
 }
 
 @media screen and (max-width: 767px) {
-  .container {
+  .benefits .container {
     padding-top: 24px;
     max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1679px) {
-  .container {
+  .benefits .container {
     padding-top: 24px;
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1680px) {
-  .container {
+  .benefits .container {
     width: 1680px;
   }
 }
@@ -1450,6 +1450,19 @@ address {
   .benefits__item {
     font-size: 20px;
   }
+}
+
+.benefits__item::after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 9px;
+  background: var(--accent-color);
+  width: 20px;
+  height: 2px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .benefits__item::before {
