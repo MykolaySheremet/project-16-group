@@ -1,0 +1,134 @@
+.footer{
+    padding-top: 40px;
+
+    @media screen and(min-width: 1680px) {
+        padding-top: 83px;
+    }
+}
+
+
+.fotter__whiteblock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and(min-width: 768px) {
+        flex-direction: row;
+        margin-bottom: 50px;
+        }
+
+    @media screen and(min-width: 1680px) {
+        margin-bottom: 80px;
+    }
+}
+
+.footer__logo{
+    margin-bottom: 20px;
+    display: flex;
+
+    @media screen and(min-width: 768px) {
+        margin-bottom: 0;
+        margin-right: 220px;
+    }
+
+    @media screen and(min-width: 1680px) {
+        margin-right: 452px;
+    }
+}
+
+.footer__svg-logo{
+    @media screen and(min-width: 768px) {
+        height: 45px;
+        width: 128px;
+    }
+}
+
+.footer__phone{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.08em;
+    color: var(--primary-text-color);
+
+    @media screen and(min-width: 768px) {
+        margin-bottom: 0;
+        margin-right: 24px;
+        font-size: 20px;
+        line-height: 1.2;
+
+        &::after {
+                content: '';
+                height: 40px;
+                width: 1px;
+                margin-left: 24px;
+                background-color: var(--secondary-light-text-color);
+            }
+    }
+
+
+    @media screen and(min-width: 1680px) {
+        font-size: 30px;
+        line-height: 1.23;
+        margin-right: 16px;
+    }
+}
+
+.footer__svg-instagram{
+    fill: url(#rg);
+    }
+
+.footer__svg-instagram-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    fill: var(--text-color-theme-dark);
+}   
+
+
+.footer__svg-phone{
+    margin-right: 8px;
+
+    @media screen and(min-width: 768px) {
+            width: 24px;
+            height: 23px;
+    }
+
+    @media screen and(min-width: 1680px) {
+        margin-right: 16px;
+        width: 30px;
+        height: 29px;
+    }
+}
+
+.footer__social-link{
+    position: relative;
+    margin-bottom: 40px;
+    display: flex;
+
+    @media screen and(min-width: 768px) {
+        margin-bottom: 0;
+    }
+}
+
+.footer__copyright{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: var(--primary-text-color);
+
+    @media screen and(min-width: 1680px) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+}
+
+.footer__text-copyright{
+    font-size: 14px;
+    line-height: 2;
+    text-align: center;
+    color: var(--secondary-light-text-color);
+}
+
