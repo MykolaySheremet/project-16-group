@@ -1526,9 +1526,6 @@ address {
 
 .reviews__info {
   text-align: center;
-  width: 240px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .customer__name {
@@ -1599,12 +1596,6 @@ address {
 
 .slide__item:not(:last-child) {
   margin-right: 32px;
-}
-
-@media screen and (max-width: 479px) {
-  .reviews__title {
-    width: 240px;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1693,6 +1684,12 @@ address {
   }
   .slide__item:not(:last-child) {
     margin-right: 40px;
+  }
+  .slide-arrow--left {
+    left: -57px;
+  }
+  .slide-arrow--right {
+    right: -57px;
   }
 }
 
