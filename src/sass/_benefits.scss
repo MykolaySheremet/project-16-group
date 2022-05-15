@@ -1,0 +1,126 @@
+.benefits {
+  background-color: var(--primary-text-color);
+}
+
+.benefits .container {
+  position: relative;
+
+  @media screen and (max-width: 767px) {
+    margin-top: -459px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1679px) {
+    margin-top: -184px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    margin-top: -199px;
+  }
+}
+
+.container {
+  padding-top: 24px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  @media screen and (max-width: 767px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1679px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    width: 1680px;
+  }
+}
+
+.benefits__title {
+  margin-bottom: 32px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+  color: var(--text-color-theme-dark);
+
+  @media screen and (max-width: 767px) {
+    width: 180px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1679px) {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1680px) {
+    display: none;
+  }
+}
+
+.benefits__container {
+  background-color: var(--text-color-theme-dark);
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  @media screen and (max-width: 767px) {
+    min-height: 646px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1679px) {
+    min-height: 381px;
+  }
+  @media screen and (min-width: 1680px) {
+    min-height: 382px;
+  }
+}
+
+.benefits__list {
+  list-style: none;
+  counter-reset: item-counter;
+
+  @media screen and (max-width: 767px) {
+    padding: 20px 24px 20px 20px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1679px) {
+    padding: 40px 112px 40px 92px;
+    display: grid;
+    grid-template-columns: 236px 216px;
+    grid-column-gap: 32px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    padding: 60px 32px 60px 140px;
+    display: grid;
+    grid-template-columns: 356px 356px 356px;
+    grid-column-gap: 204px;
+  }
+}
+
+.benefits__item {
+  margin-bottom: 40px;
+  font-weight: 700;
+  line-height: 1.43;
+  letter-spacing: 0.08em;
+
+  color: var(--primary-text-color);
+
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1679px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1680px) {
+    font-size: 20px;
+  }
+
+  &::before {
+    color: var(--accent-color);
+    counter-increment: item-counter;
+    white-space: pre;
+    content: '0' counter(item-counter) '\0a';
+  }
+}
