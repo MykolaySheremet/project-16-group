@@ -1,0 +1,80 @@
+.advantages {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 80px;
+  }
+}
+.advantages__list {
+  @media screen and(min-width: 768px) {
+    margin-right: -21px;
+    margin-bottom: -21px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.64;
+  letter-spacing: 0.08em;
+  color: var(--primary-text-color);
+  @media screen and(max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+  &:nth-child(n)::before {
+    display: inline-block;
+    content: '';
+    width: 59px;
+    height: 60px;
+    margin-right: 12px;
+    background-size: cover;
+  }
+  @media screen and(min-width: 768px) and (max-width: 1679px) {
+    &:not(:last-child) {
+      margin-right: 21px;
+    }
+  }
+  &:first-child::before {
+    background-image: url('../images/femalestudent.svg');
+    min-width: 59px;
+  }
+  &:nth-child(2)::before {
+    background-image: url('../images/magistrmobile.svg');
+    min-width: 59px;
+  }
+  &:nth-child(3)::before {
+    background-image: url('../images/ambrella.svg');
+    min-width: 59px;
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 63px) / 3);
+    margin-right: 21px;
+    margin-bottom: 21px;
+  }
+  @media screen and (min-width: 1680px) {
+    font-size: 20px;
+    &:nth-child(n)::before {
+      margin-right: -15px;
+      min-width: 100px;
+      height: 102px;
+    }
+
+    &:first-child::before {
+      background-image: url('../images/femalestudendesctop.svg');
+    }
+
+    &:nth-child(2)::before {
+      background-image: url('../images/magistrdesctop.svg');
+    }
+
+    &:nth-child(3)::before {
+      background-image: url('../images/ambrelladesctop.svg');
+    }
+  }
+}
