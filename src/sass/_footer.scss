@@ -34,8 +34,6 @@
     @media screen and(min-width: 1680px) {
         margin-right: 452px;
     }
-
-
 }
 
 .footer__svg-logo{
@@ -70,7 +68,6 @@
             }
     }
 
-    
 
     @media screen and(min-width: 1680px) {
         font-size: 30px;
@@ -80,20 +77,16 @@
 }
 
 .footer__svg-instagram{
-    background: radial-gradient(circle at center,
-            #fae100,
-            #fadc04,
-            #fbce0e,
-            #fe9838,
-            #fe7950,
-            #ff7990,
-            #ff1c74,
-            #6c1cd1);
-            fill: var(--text-color-theme-dark);
-            border-radius: 4px;
-
-           
+    fill: url(#rg);
     }
+
+.footer__svg-instagram-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    fill: var(--text-color-theme-dark);
+}   
 
 
 .footer__svg-phone{
@@ -112,11 +105,12 @@
 }
 
 .footer__social-link{
+    position: relative;
     margin-bottom: 40px;
+    display: flex;
 
     @media screen and(min-width: 768px) {
         margin-bottom: 0;
-
     }
 }
 
