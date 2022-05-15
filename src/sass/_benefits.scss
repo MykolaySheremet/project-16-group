@@ -1,5 +1,6 @@
 .benefits {
   @media screen and (max-width: 767px) {
+    padding-top: 24px;
     background-image: linear-gradient(
       to bottom,
       var(--primary-text-color) 460px,
@@ -8,6 +9,7 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1679px) {
+    padding-top: 24px;
     background-image: linear-gradient(
       to bottom,
       var(--primary-text-color) 226px,
@@ -24,24 +26,24 @@
   }
 }
 
-.benefits .container {
-  padding-left: 0px;
-  padding-right: 0px;
+// .benefits .container {
+//   // padding-left: 0px;
+//   // padding-right: 0px;
 
-  @media screen and (max-width: 767px) {
-    padding-top: 24px;
-    max-width: 480px;
-  }
+//   @media screen and (max-width: 767px) {
+//     // padding-top: 24px;
+//     max-width: 480px;
+//   }
 
-  @media screen and (min-width: 768px) and (max-width: 1679px) {
-    padding-top: 24px;
-    width: 768px;
-  }
+//   @media screen and (min-width: 768px) and (max-width: 1679px) {
+//     // padding-top: 24px;
+//     width: 768px;
+//   }
 
-  @media screen and (min-width: 1680px) {
-    width: 1680px;
-  }
-}
+//   @media screen and (min-width: 1680px) {
+//     width: 1680px;
+//   }
+// }
 
 .benefits__title {
   margin-bottom: 32px;
@@ -105,6 +107,7 @@
 }
 
 .benefits__item {
+  position: relative;
   margin-bottom: 40px;
   font-weight: 700;
   line-height: 1.43;
@@ -139,6 +142,6 @@
     color: var(--accent-color);
     counter-increment: item-counter;
     white-space: pre;
-    content: '0' counter(item-counter) '\0a';
+    content: '     0' counter(item-counter) '\0a';
   }
 }

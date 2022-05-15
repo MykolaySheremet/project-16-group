@@ -792,18 +792,21 @@ address {
 
 @media screen and (max-width: 767px) {
   .problems {
+    padding-top: 24px;
     background-image: linear-gradient(to bottom, var(--primary-text-color) 545px, var(--text-color-theme-dark) 197px);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1679px) {
   .problems {
+    padding-top: 40px;
     background-image: linear-gradient(to bottom, var(--primary-text-color) 340px, var(--text-color-theme-dark) 129px);
   }
 }
 
 @media screen and (min-width: 1680px) {
   .problems {
+    padding-top: 80px;
     position: relative;
     background-image: linear-gradient(to bottom, var(--primary-text-color) 560px, var(--text-color-theme-dark) 132px);
   }
@@ -827,34 +830,6 @@ address {
     position: absolute;
     right: 0px;
     bottom: 112px;
-  }
-}
-
-.problems .container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-@media screen and (max-width: 767px) {
-  .problems .container {
-    max-width: 480px;
-    padding-top: 24px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1679px) {
-  .problems .container {
-    width: 768px;
-    padding-top: 40px;
-  }
-}
-
-@media screen and (min-width: 1680px) {
-  .problems .container {
-    width: 1680;
-    padding-top: 80px;
   }
 }
 
@@ -1296,12 +1271,14 @@ address {
 
 @media screen and (max-width: 767px) {
   .benefits {
+    padding-top: 24px;
     background-image: linear-gradient(to bottom, var(--primary-text-color) 460px, var(--text-color-theme-dark) 269px);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1679px) {
   .benefits {
+    padding-top: 24px;
     background-image: linear-gradient(to bottom, var(--primary-text-color) 226px, var(--text-color-theme-dark) 226px);
   }
 }
@@ -1309,31 +1286,6 @@ address {
 @media screen and (min-width: 1680px) {
   .benefits {
     background-image: linear-gradient(to bottom, var(--primary-text-color) 199px, var(--text-color-theme-dark) 183px);
-  }
-}
-
-.benefits .container {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-@media screen and (max-width: 767px) {
-  .benefits .container {
-    padding-top: 24px;
-    max-width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1679px) {
-  .benefits .container {
-    padding-top: 24px;
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1680px) {
-  .benefits .container {
-    width: 1680px;
   }
 }
 
@@ -1424,6 +1376,7 @@ address {
 }
 
 .benefits__item {
+  position: relative;
   margin-bottom: 40px;
   font-weight: 700;
   line-height: 1.43;
@@ -1466,7 +1419,7 @@ address {
   color: var(--accent-color);
   counter-increment: item-counter;
   white-space: pre;
-  content: "0" counter(item-counter) "\a";
+  content: "     0" counter(item-counter) "\a";
 }
 
 @media screen and (max-width: 767px) {
