@@ -1,33 +1,40 @@
 .benefits {
-  background-color: var(--primary-text-color);
-}
-
-.benefits .container {
-  position: relative;
-
   @media screen and (max-width: 767px) {
-    margin-top: -459px;
+    background-image: linear-gradient(
+      to bottom,
+      var(--primary-text-color) 460px,
+      var(--text-color-theme-dark) 269px
+    );
   }
 
   @media screen and (min-width: 768px) and (max-width: 1679px) {
-    margin-top: -184px;
+    background-image: linear-gradient(
+      to bottom,
+      var(--primary-text-color) 226px,
+      var(--text-color-theme-dark) 226px
+    );
   }
 
   @media screen and (min-width: 1680px) {
-    margin-top: -199px;
+    background-image: linear-gradient(
+      to bottom,
+      var(--primary-text-color) 199px,
+      var(--text-color-theme-dark) 183px
+    );
   }
 }
 
 .container {
-  padding-top: 24px;
   padding-left: 0px;
   padding-right: 0px;
 
   @media screen and (max-width: 767px) {
-    width: 480px;
+    padding-top: 24px;
+    max-width: 480px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1679px) {
+    padding-top: 24px;
     width: 768px;
   }
 

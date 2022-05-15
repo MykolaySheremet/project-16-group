@@ -49,7 +49,7 @@
   padding-right: 0px;
 
   @media screen and (max-width: 767px) {
-    width: 480px;
+    max-width: 480px;
     padding-top: 24px;
   }
 
@@ -179,6 +179,6 @@
     color: var(--accent-color);
     counter-increment: item-counter;
     white-space: pre;
-    content: '&#8212 0' counter(item-counter) '\0a';
+    content: '0' counter(item-counter) '\0a';
   }
 }
