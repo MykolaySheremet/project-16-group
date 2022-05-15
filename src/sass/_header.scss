@@ -45,13 +45,6 @@
 
 .mobile_menu__close-icon {
     fill: var(--text-color-theme-dark);
-
-    transition: fill, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
-
-    &:hover,
-    &:focus {
-        fill: var(--accent-color);
-    }
 }
 
 .mobile-menu__nav-item+.mobile-menu__nav-item {
@@ -84,7 +77,7 @@
 .mobile-menu__button {
     width: 280px;
     height: 48px;
-    border: 2px solid var(--accent-color);
+    border: 2px solid #FF6500;
     background-color: transparent;
     margin-top: 40px;
     margin-left: auto;
@@ -100,13 +93,14 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
 
-    color: var(--accent-color);
-
-    transition: color, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
+    color: #FF6500;
+    cursor: pointer;
+    transition: color background-color, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
     
         &:hover,
         &:focus {
-            color: #FF6500;
+            color: var(--text-color-theme-dark);
+            background-color: #FF6500;
         }
 }
 
@@ -144,7 +138,7 @@
 
     .mobile-menu__container,
     .header__container {
-        margin-top: 15px;
+        padding-top: 15px;
     }
 }
 
@@ -161,7 +155,7 @@
 
     .mobile-menu__container,
     .header__container {
-        margin-top: 40px;
+        padding-top: 40px;
     }
 
     .mobile-menu__button {
@@ -183,7 +177,7 @@
     .header__button {
         width: 260px;
         height: 48px;
-        border: 2px solid var(--accent-color);
+        border: 2px solid #FF6500;
         background-color: transparent;
         margin-left: 255px;
 
@@ -197,7 +191,15 @@
         letter-spacing: 0.14em;
         text-transform: uppercase;
 
-        color: var(--accent-color);
+        color: #FF6500;
+        cursor: pointer;
+        transition: color background-color, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
+
+        &:hover,
+        &:focus {
+            color: var(--text-color-theme-dark);
+            background-color: #FF6500;
+        }
     }
 }
 
@@ -216,8 +218,6 @@
 
     .header {
         align-items: center;
-        margin-top: 40px;
-        margin-bottom: 40px;
     }
 
     .header__navigation {
