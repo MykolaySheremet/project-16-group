@@ -1,6 +1,7 @@
 #hero { 
-    padding-top: 80px;
-    padding-bottom: 80px;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--text-color-theme-dark);
@@ -24,8 +25,8 @@
     
     @media screen and (min-width: 1680px) {
         width: 1680px;
-        padding-top: 40px;
-        padding-bottom: 80px;
+        padding-top: 0px;
+        padding-bottom: 40px;
 
         background-image: url(../images/hero-desktop-bg.svg);
         box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
@@ -35,8 +36,8 @@
 }
 .hero__thumb {
     @media screen and (min-width: 768px) {
-            display: flex;
-            position: relative;
+        display: flex;
+        position: relative;
         }
 }
 .hero__title {
@@ -74,8 +75,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 22px;
@@ -141,7 +140,7 @@
         font-size: 14px;
         line-height: 17px;
         padding: 27px 70px;
-        margin-bottom: 304px;
+        margin-bottom: 264px;
     }
 }
 
@@ -168,94 +167,5 @@
         width: 842px;
         height: 720px;
 
-    }
-}
-
-.hero__list {
-    width: 280px;
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-
-    @media screen and (min-width: 768px) {
-        width: 700px;
-        display: flex;
-        flex-direction: row;
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 0;
-    }
-
-    @media screen and (min-width: 1680px) {
-        width: 1570px;
-        display: flex;
-        flex-direction: row;
-        margin-left: 0;
-        margin-right: 0;
-
-    }
-}
-
-.hero__list-link {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    
-
-    &:not(:last-child) {
-        margin-bottom: 31px;
-    }
-
-    @media screen and (min-width: 768px) {
-        
-        &:not(:last-child) {
-                margin-bottom: 0px;
-                margin-right: auto;
-            }
-
-    }
-
-    @media screen and (min-width: 1680px) {
-        &:not(:last-child) {
-                margin-right: 112px;
-            }
-        }
-
-}
-
-.hero__list-text {
-    position: relative;
-    width: 208px;
-    margin-left: 12px;
-    font-weight: 700;
-    line-height: 23px;
-    letter-spacing: 0.08em;
-    color: var(--primary-text-color);
-
-    @media screen and (min-width: 768px) {
-        margin-left: 18px;
-        width: 145px;
-        font-size: 14px;
-    }
-
-    @media screen and (min-width: 1680px) {
-        width: 330px;
-        font-size: 20px;
-        line-height: 33px;
-        left: -37px;
-
-    }
-}
-
-.hero__list-icon {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    
-    @media screen and (min-width: 1680px) {
-        width: 100px;
-        height: 100px;
     }
 }
