@@ -13,23 +13,32 @@
     }
 }
 
+.backdrop.is-hidden .modal-window {
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+}
+
 .modal-window {
     width: 320px;
     height: 320px;
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    z-index: auto;
+    transform: translate(-50%, -50%) rotate(360deg);
     background-color: #0d0a0a;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
     border: 3px solid var(--accent-color);
-    z-index: 100;
+    
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: transform, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
 }
 
 .modal-window__close-button {
@@ -48,13 +57,7 @@
 }
 
 .modal-window__close-icon {
-    // fill: white;
-    transition: fill, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
-
-    &:hover,
-    &:focus {
-        fill: var(--accent-color);
-    }
+    fill: white;
 }
 
 .modal-window__text {
