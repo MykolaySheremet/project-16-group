@@ -1,0 +1,120 @@
+.advantages {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 80px;
+  }
+}
+
+.advantages__list {
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  @media screen and(min-width: 768px) and (max-width: 1679px) {
+    margin-right: 21px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1680px) {
+    margin-right: 113px;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.64;
+  letter-spacing: 0.08em;
+  color: #111518;
+
+  @media screen and (max-width: 767px) {
+    &:first-child {
+      width: 216px;
+    }
+
+    &:nth-child(3) {
+      width: 250px;
+    }
+  }
+
+  &:nth-child(n)::before {
+    margin-right: 12px;
+    content: '';
+    display: inline-block;
+    background-size: cover;
+    min-width: 59px;
+    height: 60px;
+  }
+
+  &:first-child::before {
+    background-image: url('../images/femalestudent.svg');
+  }
+
+  &:nth-child(2)::before {
+    background-image: url('../images/magistrmobile.svg');
+  }
+
+  &:nth-child(3)::before {
+    background-image: url('../images/ambrella.svg');
+  }
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1679px) {
+    &:not(:last-child) {
+      margin-right: 21px;
+    }
+
+    &:nth-child(2) {
+      width: 216px;
+    }
+
+    &:nth-child(3) {
+      width: 189px;
+    }
+  }
+
+  @media screen and (min-width: 1680px) {
+    font-size: 20px;
+
+    &:not(:last-child) {
+      margin-right: 113px;
+    }
+
+    &:nth-child(3) {
+      width: 366px;
+    }
+
+    &:nth-child(n)::before {
+      margin-right: -15px;
+      min-width: 100px;
+      height: 102px;
+    }
+
+    &:first-child::before {
+      background-image: url('../images/femalestudendesctop.svg');
+    }
+
+    &:nth-child(2)::before {
+      background-image: url('../images/magistrdesctop.svg');
+    }
+
+    &:nth-child(3)::before {
+      background-image: url('../images/ambrelladesctop.svg');
+    }
+  }
+}
