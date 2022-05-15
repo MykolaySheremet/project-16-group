@@ -36,8 +36,11 @@
     background-size: cover;
   }
   @media screen and(min-width: 768px) and (max-width: 1679px) {
-    &:not(:last-child) {
+    &:not(:nth-child(3n)) {
       margin-right: 21px;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
     }
   }
   &:first-child::before {
@@ -55,7 +58,6 @@
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 63px) / 3);
     margin-right: 21px;
-    margin-bottom: 21px;
   }
   @media screen and (min-width: 1680px) {
     font-size: 20px;
