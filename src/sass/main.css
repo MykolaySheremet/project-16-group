@@ -688,20 +688,39 @@ address {
 @media screen and (max-width: 767px) {
   .problems {
     padding-top: 24px;
-    background-image: linear-gradient(to bottom, var(--primary-text-color) 545px, var(--text-color-theme-dark) 197px);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1679px) {
   .problems {
     padding-top: 40px;
-    background-image: linear-gradient(to bottom, var(--primary-text-color) 340px, var(--text-color-theme-dark) 129px);
   }
 }
 
 @media screen and (min-width: 1680px) {
   .problems {
     padding-top: 80px;
+  }
+}
+
+.problems .container {
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .problems .container {
+    background-image: linear-gradient(to bottom, var(--primary-text-color) 545px, var(--text-color-theme-dark) 197px);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1679px) {
+  .problems .container {
+    background-image: linear-gradient(to bottom, var(--primary-text-color) 340px, var(--text-color-theme-dark) 129px);
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .problems {
     position: relative;
     background-image: linear-gradient(to bottom, var(--primary-text-color) 560px, var(--text-color-theme-dark) 132px);
   }
@@ -724,7 +743,7 @@ address {
     fill: var(--secondary-dark-text-color);
     position: absolute;
     right: 0px;
-    bottom: 112px;
+    bottom: 227px;
   }
 }
 
