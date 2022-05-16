@@ -53,7 +53,7 @@
     text-align: center;
     letter-spacing: 0.03em;
   
-    color: #FFFFFF;
+    color: var(--text-color-theme-dark);
   
     margin-bottom: 40px;
   
@@ -98,7 +98,7 @@
             height: 1px;
             width: 100%;
             top: 145px;
-            background-color: white;
+            background-color: var(--text-color-theme-dark);
         }
     }
 
@@ -132,9 +132,10 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     
-    color: #FFFFFF;
+    color: var(--text-color-theme-dark);
   
     margin-bottom: 4px;
+    
   
     &::before {
         content: '';
@@ -144,7 +145,7 @@
         border-radius: 50%;
         left: -5px;
         top: 8px;
-        background-color: #FF6B09;
+        background-color: var(--accent-color);
         z-index: 1;
     }
 
@@ -159,7 +160,7 @@
         height: 1px;
         top: 35px;
         left: 20px;
-        background-color: #FF6B09;
+        background-color: var(--accent-color);
     }
     @media screen and (min-width: 768px) {
         &.last::after {
@@ -168,6 +169,8 @@
     }
 
     @media screen and (min-width: 1680px) {
+
+        font-size: 30px;
         &::before {
             left: 0;
             top: -40px;
@@ -175,6 +178,7 @@
         
         &.last::after {
             left: 0;
+            top: 70px
         }
         
     }
@@ -182,7 +186,8 @@
   }
 
   .program__item--lesson {
-      max-width: 140px;
+      max-width: 150px;
+
       &:not(:last-child) {
           margin-bottom: 4px;
       }
@@ -206,16 +211,23 @@
   
         font-weight: 700;
         font-size: 12px;
-        line-height: 164.9%;
+        line-height: 1.6;
         display: flex;
         align-items: center;
         letter-spacing: 0.08em;
     
-        color: #FF6B09;
+        color: var(--accent-color);
+        margin-bottom: 4px;
+
+        @media screen and (min-width: 1680px) {
+            font-size: 20px;
+            margin-bottom: 8px;
+
+        }
 
         &::before {
             content:'';
-            background-color: #FF6B09;
+            background-color: var(--accent-color);
             width: 12px;
             height: 1px;
             margin-right: 7px;
@@ -224,19 +236,18 @@
   }
 
   .program__text {
-    font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
         font-size: 12px;
-        line-height: 20px;
-        /* or 167% */
-    
+        line-height: 1.6;
         letter-spacing: 0.08em;
     
-        color: #B9B9B9;
+        color: var(--secondary-light-text-color);
     
         opacity: 0.5;
         position: relative;
+
+        @media screen and (min-width: 1680px) {
+            font-size: 18px;
+        }
         
   }
 
