@@ -10,25 +10,38 @@
         <span class="contacts__title-wordcolor">free lesson</span>.<br />A consultant will contact
         you and answer your questions
       </p>
-      <input
+      <div class="item" data-title="Input your Name(min.3 letters)">
+        <input class="contacts-form__input contacts-form__inputname" type="text" minlength="3" name="name"
+          title="Name must contain min three letters" autocomplete="off" placeholder="Name*" required />
+      </div>
+
+      <div class="item-tel" data-title="Input your Phone +380xxxxxxxxx">
+        <input class="contacts-form__input contacts-form__inputtel" type="tel" pattern="[\+]\d{3}[0-9]{3}[0-9]{3}[0-9]{3}"
+        title="Input +380xxxxxxxxx" autocomplete="off" name="phone-number" placeholder="Phone*" required />
+      </div>
+
+      
+      <!-- <input
         class="contacts-form__input contacts-form__inputname"
         type="text"
         minlength="3"
         name="name"
         title="Name must contain min three letters"
+        autocomplete="off"
         placeholder="Name*"
         required
-      />
+      /> -->
 
-      <input
+      <!-- <input
         class="contacts-form__input contacts-form__inputtel"
         type="tel"
         pattern="[\+]\d{3}[0-9]{3}[0-9]{3}[0-9]{3}"
         title="Input +380xxxxxxxxx"
+        autocomplete="off"
         name="phone-number"
         placeholder="Phone*"
         required
-      />
+      /> -->
 
       <button class="contacts-form__button" type="submit">i want a free lesson</button>
     </form>
