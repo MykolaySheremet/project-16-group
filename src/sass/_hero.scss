@@ -1,4 +1,4 @@
-.hero-box { 
+.hero-section{ 
     position: relative;
     padding-top: 40px;
     padding-bottom: 60px;
@@ -28,7 +28,7 @@
     
     @media screen and (min-width: 1680px) {
         padding-top: 40px;
-        padding-bottom: 0px;
+        padding-bottom: 40px;
 
         background-image: url(../images/hero-desktop-bg.svg);
         background-position: 0px -120px;
@@ -154,7 +154,7 @@
     width: 208px;
     height: 178px;
     left: 56px;
-    top: 344px;
+    bottom: 344px;
     margin-left: auto;
     margin-right: auto;
 
@@ -164,14 +164,14 @@
         width: 375.75px;
         height: 321.09px;
         left: 360px;
-        top: 0px;
+        bottom: 0px;
 
     }
 
     @media screen and (min-width: 1680px) {
         position: absolute;
         left: 807px;
-        top: 0px;
+        bottom: 0px;
         width: 842px;
         height: 720px;
 
