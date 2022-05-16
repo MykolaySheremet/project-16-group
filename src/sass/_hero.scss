@@ -1,34 +1,32 @@
-.hero-box { 
+.hero-section{ 
     position: relative;
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
     background-color: var(--text-color-theme-dark);
-    background-origin: border-box;
-    background-size: cover;
 
     @media screen and (min-width: 320px), (max-width: 479.98px) {
         background-image: url(../images/hero-tablet-bg.svg);
         background-repeat: no-repeat;
         box-shadow: background-image -5px 21px 26px rgba(0, 0, 0, 0.04);
-        background-position: -60px 40px;
+        background-position: -60px 0px;
         }
 
     @media screen and (min-width: 480px) {
         background-image: url(../images/hero-tablet-bg.svg);
         background-position: 50%;
-        background-position: -20px 40px;
+        background-position: -20px 0px;
         }
 
     @media screen and (min-width: 768px) {
         padding-top: 80px;
-        padding-bottom: 45px;
+        padding-bottom: 85px;
         background-image: url(../images/hero-tablet-bg.svg);
         background-position: 0px -80px;
         }
     
     @media screen and (min-width: 1680px) {
         padding-top: 40px;
-        padding-bottom: 0px;
+        padding-bottom: 40px;
 
         background-image: url(../images/hero-desktop-bg.svg);
         background-position: 0px -120px;
@@ -154,7 +152,7 @@
     width: 208px;
     height: 178px;
     left: 56px;
-    top: 344px;
+    bottom: 344px;
     margin-left: auto;
     margin-right: auto;
 
@@ -164,14 +162,14 @@
         width: 375.75px;
         height: 321.09px;
         left: 360px;
-        top: 0px;
+        bottom: 0px;
 
     }
 
     @media screen and (min-width: 1680px) {
         position: absolute;
         left: 807px;
-        top: 0px;
+        bottom: 0px;
         width: 842px;
         height: 720px;
 
