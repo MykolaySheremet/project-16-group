@@ -1,27 +1,25 @@
 .hero-section{ 
     position: relative;
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
     background-color: var(--text-color-theme-dark);
-    background-origin: border-box;
-    background-size: cover;
 
     @media screen and (min-width: 320px), (max-width: 479.98px) {
         background-image: url(../images/hero-tablet-bg.svg);
         background-repeat: no-repeat;
         box-shadow: background-image -5px 21px 26px rgba(0, 0, 0, 0.04);
-        background-position: -60px 40px;
+        background-position: -60px 0px;
         }
 
     @media screen and (min-width: 480px) {
         background-image: url(../images/hero-tablet-bg.svg);
         background-position: 50%;
-        background-position: -20px 40px;
+        background-position: -20px 0px;
         }
 
     @media screen and (min-width: 768px) {
         padding-top: 80px;
-        padding-bottom: 45px;
+        padding-bottom: 85px;
         background-image: url(../images/hero-tablet-bg.svg);
         background-position: 0px -80px;
         }
