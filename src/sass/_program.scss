@@ -1,7 +1,46 @@
 .program {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: var(--primary-text-color);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--primary-text-color);
+      position: relative;
+  
+
+      &::after {
+          content: '';
+          width: 176px;
+          height: 137px;
+          background-image: url(../images/mainpic_mobile.png);
+          position: absolute;
+          bottom: 0;
+          right: 0;
+      }
+      @media screen and (min-width: 768px) {
+          &::after {
+              content: '';
+              width: 350px;
+              height: 220px;
+              background-image: url(../images/mainpic_tablet.png);
+              position: absolute;
+              bottom: 0;
+              right: 0;
+            }
+        }
+
+         @media screen and (min-width: 1680px) {
+          &::after {
+              content: '';
+              width: 400px;
+              height: 200px;
+              background-image: url(../images/mainpic_desktop.png);
+              position: absolute;
+              bottom: 0;
+              left: 0;
+            }
+        }
+
+        
+
+        
 }
 
 .program__title {
@@ -9,50 +48,84 @@
     font-weight: 800;
     font-size: 20px;
     line-height: 1.3;
+  
+  
     text-align: center;
     letter-spacing: 0.03em;
+  
     color: #FFFFFF;
+  
     margin-bottom: 40px;
-
+  
     @media screen and (min-width: 768px) {
         text-align: left;
-        font-size: 26px;
+        font-size: 26;
     }
-}  
-
-.program__list {
-
-    position: relative;
   
-    &::before {
+    @media screen and (min-width: 1680px) {
+       font-size: 46px; 
+       margin-bottom: 80px;
+    }
+  }
+
+  .program__list {
+      position: relative;
+    
+      &::before {
         content: '';
         position: absolute;
-        height: 93%;
+        height: 94%;
+        width: 1px;
         top: 12px;
         left: 0;
-        border-left: 1px solid white;
-        
+        background-color: white;
     }
+
     @media screen and (min-width: 768px) {
         margin-left: 70px;
+        
+
+        &::before {
+            height: 92%;
+        }
     }
-}  
 
-.program__item {
-    position: relative;
-    padding-left: 20px;
+    @media screen and (min-width: 1680px) {
+        display: flex;
+        position: static;
+        
+        &::before {
+            height: 1px;
+            width: 100%;
+            top: 145px;
+            background-color: white;
+        }
+    }
 
-    &:not(:last-child) {
+    
+  }
+
+  .program__item {
+      position: relative;
+      padding-left: 20px;
+      
+      &:not(:last-child) {
         margin-bottom: 40px;
     }
 
     @media screen and (min-width: 768px) {
         padding-left: 107px;
     }
-}
+    @media screen and (min-width: 1680px) {
+        padding-left: 0;
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+  }
 
+  .program__title--semester {
 
-.program__title--semester {
     font-weight: 700;
     font-size: 14px;
     line-height: 2;
@@ -62,86 +135,119 @@
     color: #FFFFFF;
   
     margin-bottom: 4px;
-
-    &.last {
-        &::after {
-            content:"";
-            position: absolute;
-            background-color: #FF6B09;
-            width: 12px;
-            height: 1px;
-            bottom: 20px;
-            left: 20px;
-            
-        }
-    }
   
     &::before {
         content: '';
         position: absolute;
         width: 12px;
         height: 12px;
-        border-radius: 50px;
+        border-radius: 50%;
         left: -5px;
         top: 8px;
         background-color: #FF6B09;
         z-index: 1;
     }
-  }
-   
-.program__item--lesson {
 
-    &:not(:last-child) {
-        margin-bottom: 4px;
+    &.last {
+        margin-bottom: 15px;
+    }
+
+    &.last::after {
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 1px;
+        top: 35px;
+        left: 20px;
+        background-color: #FF6B09;
     }
     @media screen and (min-width: 768px) {
-        margin-left: 40px;
-        margin-top: 40px;
-        width: calc((100% - 120px) / 3);
+        &.last::after {
+            left: 107px
+        }
     }
- 
-}
 
-.program__title--plan {
+    @media screen and (min-width: 1680px) {
+        &::before {
+            left: 0;
+            top: -40px;
+        }   
+        
+        &.last::after {
+            left: 0;
+        }
+        
+    }
 
-      font-weight: 700;
-      font-size: 12px;
-      line-height: 1.6;
-  
-      display: flex;
-      align-items: center;
-      letter-spacing: 0.08em;
-  
-      color: #FF6B09;
+  }
 
-      margin-bottom: 4px;
-
-      &::before {
-          content:"";
-          background-color: #FF6B09;
-          width: 12px;
-          height: 1px;
-          margin-right: 7px;
+  .program__item--lesson {
+      max-width: 140px;
+      &:not(:last-child) {
+          margin-bottom: 4px;
       }
 
-}
+      @media screen and (min-width: 768px) {
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
 
-.program__text {
+    @media screen and (min-width: 1680px) {
+        &:not(:last-child) {
+            margin-bottom: 24px;
+            margin-right: 0;
+
+        }
+    }
+  }
+
+  .program__title--plan {
+  
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 164.9%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.08em;
+    
+        color: #FF6B09;
+
+        &::before {
+            content:'';
+            background-color: #FF6B09;
+            width: 12px;
+            height: 1px;
+            margin-right: 7px;
+        }
+        
+  }
+
+  .program__text {
+    font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
-        line-height: 2;
+        line-height: 20px;
+        /* or 167% */
+    
         letter-spacing: 0.08em;
+    
         color: #B9B9B9;
+    
         opacity: 0.5;
         position: relative;
-  
+        
   }
 
   .program__gramvocab {
       @media screen and (min-width: 768px) {
           display: flex;
-          margin-left: -40px;
-          margin-top: -40px;
+      }
+
+      @media screen and (min-width: 1680px) {
+          flex-direction: column;
       }
   }
+
+  
