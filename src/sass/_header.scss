@@ -11,7 +11,7 @@
     visibility: hidden;
     pointer-events: none;
 
-    transition: opacity, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu.is-open {
@@ -66,7 +66,7 @@
     letter-spacing: 0.03em;
     color: var(--text-color-theme-dark);
 
-    transition: color, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -95,7 +95,7 @@
 
     color: #FF6500;
     cursor: pointer;
-    transition: color background-color, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
         &:hover,
         &:focus {
@@ -119,7 +119,7 @@
     cursor: pointer;
     fill: var(--burger-color);
 
-    transition: fill, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -193,7 +193,7 @@
 
         color: #FF6500;
         cursor: pointer;
-        transition: color background-color, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover,
         &:focus {
@@ -252,7 +252,7 @@
         text-transform: uppercase;
         color: var(--secondary-light-text-color);
 
-        transition: color, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover,
         &:focus {
