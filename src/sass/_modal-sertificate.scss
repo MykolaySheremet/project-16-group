@@ -4,7 +4,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.7);
   &.is-hidden2 {
     opacity: 0;
     visibility: hidden;
@@ -15,7 +15,7 @@
 .backdrop2.is-hidden2 .modal-window2 {
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.1);
+  transform: translate(-50%, -50%) scale(0.01);
 }
 
 .modal-window2 {
@@ -26,7 +26,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  border: 3px solid var(--primary-text-color);
+  border: 8px double var(--accent-color);
 
   display: flex;
   align-items: center;
@@ -35,14 +35,14 @@
 }
 
 .modal-window2__img {
-  width: 550px;
-  height: 700px;
+  width: 600px;
+  height: 750px;
 }
 
 .modal-window2__close-button {
   position: absolute;
   top: 10px;
-  right: 0;
+  right: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,8 +52,16 @@
   line-height: 0;
   outline: none;
   cursor: pointer;
+  &:hover .modal-window2__close-icon,
+  &:focus .modal-window2__close-icon {
+    background-color: var(--accent-color);
+  }
 }
 
-// .modal-window2__close-icon {
-//   fill: #000;
-// }
+.modal-window2__close-icon {
+  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: #fff;
+  }
+}
