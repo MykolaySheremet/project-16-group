@@ -1,5 +1,6 @@
-.container.benefits-general-container {
+.container.benefits-container {
   @media screen and (max-width: 767px) {
+    padding-top: 40px;
     background-image: linear-gradient(
       to bottom,
       var(--primary-text-color) 460px,
@@ -8,6 +9,8 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1679px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-image: linear-gradient(
       to bottom,
       var(--primary-text-color) 226px,
@@ -16,6 +19,8 @@
   }
 
   @media screen and (min-width: 1680px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-image: linear-gradient(
       to bottom,
       var(--primary-text-color) 199px,
@@ -33,7 +38,7 @@
   color: var(--text-color-theme-dark);
 
   @media screen and (max-width: 767px) {
-    width: 180px;
+    max-width: 180px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1679px) {
@@ -47,27 +52,15 @@
   }
 }
 
-.benefits__container {
+.benefits__list {
+  list-style: none;
+  counter-reset: item-counter;
   background-color: var(--text-color-theme-dark);
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
   @media screen and (max-width: 767px) {
+    padding: 20px 24px 30px 20px;
     min-height: 646px;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1679px) {
-    min-height: 381px;
-  }
-  @media screen and (min-width: 1680px) {
-    min-height: 382px;
-  }
-}
-
-.benefits__list {
-  list-style: none;
-  counter-reset: item-counter;
-
-  @media screen and (max-width: 767px) {
-    padding: 20px 24px 20px 20px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1679px) {
@@ -75,6 +68,7 @@
     display: grid;
     grid-template-columns: 236px 216px;
     grid-column-gap: 32px;
+    min-height: 381px;
   }
 
   @media screen and (min-width: 1680px) {
@@ -82,6 +76,7 @@
     display: grid;
     grid-template-columns: 356px 356px 356px;
     grid-column-gap: 204px;
+    min-height: 382px;
   }
 }
 
@@ -100,6 +95,9 @@
       top: 9px;
       width: 20px;
       height: 2px;
+    }
+    &:last-child {
+      margin-bottom: 0px;
     }
   }
 
