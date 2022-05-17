@@ -94,6 +94,10 @@
   }
 }
 
+.problems__title-wrap {
+  display: block;
+}
+
 .problems__list {
   counter-reset: item-counter;
   background-color: var(--text-color-theme-dark);
