@@ -59,7 +59,7 @@
   
     @media screen and (min-width: 768px) {
         text-align: left;
-        font-size: 26;
+        font-size: 26px;
     }
   
     @media screen and (min-width: 1680px) {
@@ -149,44 +149,29 @@
         z-index: 1;
     }
 
-    &.last {
-        margin-bottom: 15px;
-    }
 
-    &.last::after {
-        content: '';
-        position: absolute;
-        width: 12px;
-        height: 1px;
-        top: 35px;
-        left: 20px;
-        background-color: var(--accent-color);
-    }
-    @media screen and (min-width: 768px) {
-        &.last::after {
-            left: 107px
-        }
-    }
 
     @media screen and (min-width: 1680px) {
 
         font-size: 30px;
+        
         &::before {
             left: 0;
-            top: -40px;
+            top: -42px;
+            width: 16px;
+            height: 16px;
         }   
         
-        &.last::after {
-            left: 0;
-            top: 70px
-        }
+        
         
     }
 
   }
 
   .program__item--lesson {
-      max-width: 150px;
+
+      max-width: 120px;
+      height: auto;
 
       &:not(:last-child) {
           margin-bottom: 4px;
@@ -199,6 +184,8 @@
     }
 
     @media screen and (min-width: 1680px) {
+
+        max-width: 220px;
         &:not(:last-child) {
             margin-bottom: 24px;
             margin-right: 0;
@@ -217,11 +204,19 @@
         letter-spacing: 0.08em;
     
         color: var(--accent-color);
+        
         margin-bottom: 4px;
+        &.last {
+            color: transparent;
+        }
 
         @media screen and (min-width: 1680px) {
             font-size: 20px;
             margin-bottom: 8px;
+            &.last {
+                color: transparent;
+                margin-bottom: 6px;
+            }
 
         }
 
@@ -231,6 +226,7 @@
             width: 12px;
             height: 1px;
             margin-right: 7px;
+            
         }
         
   }
