@@ -27,17 +27,11 @@
     @media screen and (min-width: 1680px) {
         padding-top: 40px;
         padding-bottom: 40px;
-
         background-image: url(../images/hero-desktop-bg.svg);
         background-position: 0px -120px;
         } 
 }
-.hero__thumb {
-    @media screen and (min-width: 768px) {
-        display: flex;
-        position: relative;
-        }
-}
+
 .hero__title {
     width: 280px;
     margin-bottom: 8px;
@@ -95,12 +89,18 @@
 }
 
 .hero__span {
+    display: block;
     font-weight: 500;
     color: var(--secondary-light-text-color);
 }
 
 .hero__points {
+    display: block;
     color: var(--accent-color);
+
+    @media screen and (min-width: 480px) {
+        display: inline;
+        }
 }
 
 .hero__btn {
@@ -162,7 +162,7 @@
         width: 375.75px;
         height: 321.09px;
         left: 360px;
-        bottom: 0px;
+        top: 85px;
 
     }
 
