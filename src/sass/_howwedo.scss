@@ -66,9 +66,7 @@
   display: block;
   position: relative;
   min-width: 280px;
-  // height: 100%;
   min-height: 280px;
-  // padding-bottom: 20px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 32px;
@@ -78,17 +76,14 @@
 
   @media screen and (min-width: 768px) {
     min-width: 336px;
-    // height: 100%;
     min-height: 336px;
     padding-top: 40px;
   }
 
   @media screen and (min-width: 1680px) {
     width: 528px;
-    // height: 100%;
     min-height: 528px;
     padding-top: 90px;
-    // padding-bottom: 90px;
   }
 
   &:hover {
