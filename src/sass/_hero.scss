@@ -1,6 +1,6 @@
 .hero-section { 
     position: relative;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
@@ -22,7 +22,7 @@
 
     @media screen and (min-width: 768px) {
         width: 768px;
-        padding-top: 80px;
+        padding-top: 20px;
         padding-bottom: 85px;
         background-image: url(../images/hero-tablet-bg.svg);
         background-position: 0px -80px;
