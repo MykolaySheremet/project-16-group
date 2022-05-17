@@ -2,38 +2,36 @@
   <div class="container">
     <h2 class="about__title">Teacher</h2>
     <div class="about__wrapper">
-      <div class="about__img-box">
-        <picture>
-          <source
-            media="(min-width: 1680px)"
-            srcset="./images/teacher_desktop_webp.webp 1x, ./images/teacher_desktop2x_webp.webp 2x"
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 1680px)"
-            srcset="./images/teacher_desktop.jpg 1x, ./images/teacher_desktop2x.jpg 2x"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="./images/teacher_tablet_webp.webp 1x, ./images/teacher_tablet2x_webp.webp 2x"
-            type="image/webp"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="./images/teacher_tablet.jpg 1x, ./images/teacher_tablet2x.jpg 2x"
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="./images/teacher_mobile_webp.webp 1x, ./images/teacher_mobile2x_webp.webp 2x"
-            type="image/webp"
-          />
-          <source
-            media="(max-width: 767px)"
-            srcset="./images/teacher_mobile.jpg 1x, ./images/teacher_mobile2x.jpg 2x"
-          />
-          <img class="about__img" src="./images/teacher_desktop.jpg" alt="teacher Elena Morozova" />
-        </picture>
-      </div>
+      <picture class="about__img-box">
+        <source
+          media="(min-width: 1680px)"
+          srcset="./images/teacher_desktop_webp.webp 1x, ./images/teacher_desktop2x_webp.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1680px)"
+          srcset="./images/teacher_desktop.jpg 1x, ./images/teacher_desktop2x.jpg 2x"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/teacher_tablet_webp.webp 1x, ./images/teacher_tablet2x_webp.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/teacher_tablet.jpg 1x, ./images/teacher_tablet2x.jpg 2x"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="./images/teacher_mobile_webp.webp 1x, ./images/teacher_mobile2x_webp.webp 2x"
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="./images/teacher_mobile.jpg 1x, ./images/teacher_mobile2x.jpg 2x"
+        />
+        <img class="about__img" src="./images/teacher_desktop.jpg" alt="teacher Elena Morozova" />
+      </picture>
       <div class="about__info-box">
         <h3 class="about__subtitle">Elena Morozova</h3>
         <ul class="about__list list">
@@ -53,17 +51,13 @@
             In spare time takes courses from the best universities in the world on effective
             teaching and essay writing techniques.
           </p>
-          <p class="about__text">
+          <p class="about__text about__text-last">
             Completed: English Grammar and Essay Writing (Berkeley), English Grammar & Style (The
             University of Queesland), How to Write an Essay (Berkeley), Academic and Business
             Writing (Berkeley), The Art of Teaching (GEMS education), Powerful Tools for Teaching
             and Learning (University of Houston).
           </p>
-          <a
-            class="about__link"
-            href="https://www.cambridgeenglish.org/"
-            target="_blank"
-            rel="noopener noreferrer"
+          <a class="about__link" href="#about" data-modal-open2
             >Cambrige English Entry Level Certificate</a
           >
         </div>

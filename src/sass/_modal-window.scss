@@ -38,7 +38,7 @@
     align-items: center;
     justify-content: center;
 
-    transition: transform, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-window__close-button {
