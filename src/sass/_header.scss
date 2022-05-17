@@ -11,7 +11,7 @@
     visibility: hidden;
     pointer-events: none;
 
-    transition: opacity, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu.is-open {
@@ -44,7 +44,14 @@
 }
 
 .mobile_menu__close-icon {
-    fill: var(--text-color-theme-dark);
+    fill: #fff;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .mobile-menu__close-button:hover &,
+    .mobile-menu__close-button:focus & {
+        fill: var(--accent-color);
+    }
 }
 
 .mobile-menu__nav-item+.mobile-menu__nav-item {
@@ -66,7 +73,7 @@
     letter-spacing: 0.03em;
     color: var(--text-color-theme-dark);
 
-    transition: color, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
@@ -95,13 +102,13 @@
 
     color: #FF6500;
     cursor: pointer;
-    transition: color background-color, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
-        &:hover,
-        &:focus {
-            color: var(--text-color-theme-dark);
-            background-color: #FF6500;
-        }
+    &:hover,
+    &:focus {
+        color: var(--text-color-theme-dark);
+        background-color: #FF6500;
+    }
 }
 
 .header__container {
@@ -117,12 +124,15 @@
     border: none;
     line-height: 0;
     cursor: pointer;
+}
+
+.header__burger-icon {
     fill: var(--burger-color);
+    
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    transition: fill, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
-
-    &:hover,
-    &:focus {
+    .header__burger-button:hover &,
+    .header__burger-button:focus & {
         fill: var(--accent-color);
     }
 }
@@ -136,8 +146,8 @@
         display: none;
     }
 
-    .mobile-menu__container,
-    .header__container {
+    .mobile-menu,
+    .header {
         padding-top: 15px;
     }
 }
@@ -153,8 +163,8 @@
         display: none;
     }
 
-    .mobile-menu__container,
-    .header__container {
+    .mobile-menu,
+    .header{
         padding-top: 40px;
     }
 
@@ -193,7 +203,7 @@
 
         color: #FF6500;
         cursor: pointer;
-        transition: color background-color, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover,
         &:focus {
@@ -252,7 +262,7 @@
         text-transform: uppercase;
         color: var(--secondary-light-text-color);
 
-        transition: color, cubic-bezier(0.4, 0, 0.2, 1), 250ms;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover,
         &:focus {

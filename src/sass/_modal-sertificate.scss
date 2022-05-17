@@ -1,0 +1,71 @@
+.backdrop2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  &.is-hidden2 {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.backdrop2.is-hidden2 .modal-window2 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.01);
+}
+
+.modal-window2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  border: 8px double var(--accent-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-window2__img {
+  @media screen and(max-width: 767px) {
+    width: 320px;
+  }
+  @media screen and(min-width: 768px) {
+    width: 600px;
+  }
+}
+
+.modal-window2__close-button {
+  position: absolute;
+  top: 10px;
+  right: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  line-height: 0;
+  outline: none;
+  cursor: pointer;
+  &:hover .modal-window2__close-icon,
+  &:focus .modal-window2__close-icon {
+    background-color: var(--accent-color);
+  }
+}
+
+.modal-window2__close-icon {
+  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: #fff;
+  }
+}

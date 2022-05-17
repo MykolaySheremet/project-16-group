@@ -1,31 +1,49 @@
+
 .hero-section { 
     position: relative;
     padding-top: 20px;
     padding-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
+
     background-color: var(--text-color-theme-dark);
 
+    @media screen and (min-width: 768px) {
+        padding-top: 80px;
+        padding-bottom: 20px;
+        }
+    
+    @media screen and (min-width: 1680px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        } 
+}
+
+.hero-container { 
+    position: relative;
+    
     @media screen and (min-width: 320px), (max-width: 479.98px) {
+        height: 525px;
         background-image: url(../images/hero-tablet-bg.svg);
         background-repeat: no-repeat;
         box-shadow: background-image -5px 21px 26px rgba(0, 0, 0, 0.04);
-        background-position: -60px 0px;
+        background-position: -60px -40px;
         }
 
     @media screen and (min-width: 480px) {
         width: 480px;
         background-image: url(../images/hero-tablet-bg.svg);
         background-position: 50%;
-        background-position: -20px 0px;
+        background-position: -20px -40px;
         }
 
     @media screen and (min-width: 768px) {
+
         width: 768px;
         padding-top: 20px;
         padding-bottom: 85px;
         background-image: url(../images/hero-tablet-bg.svg);
-        background-position: 0px -80px;
+        background-position: 0px -200px;
         }
     
     @media screen and (min-width: 1680px) {
@@ -33,10 +51,9 @@
         padding-top: 40px;
         padding-bottom: 40px;
         background-image: url(../images/hero-desktop-bg.svg);
-        background-position: 0px -120px;
+        background-position: 0px -140px;
         } 
 }
-
 .hero__title {
     width: 280px;
     margin-bottom: 8px;
@@ -105,6 +122,7 @@
     @media screen and (min-width: 480px) {
         display: inline;
         }
+
 }
 
 .hero__btn {
@@ -126,6 +144,7 @@
     color: #FFFFFF;
     background-color: var(--accent-color);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    scroll-behavior: smooth;
 
     &:hover,
     &:focus {
@@ -152,30 +171,111 @@
     }
 }
 
-.hero__image {
-    width: 208px;
-    height: 178px;
-    left: 56px;
-    bottom: 344px;
+
+.hero-picture {
+    @media screen and (min-width: 320px), (max-width:767.98px) {
+        display: none;
+        }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        }
+    
+    @media screen and (min-width: 1680px) {
+        display: block;
+    }
+
+}
+
+.hero__image--non-animated {
+        display: block;
+        width: 208px;
+        height: 178px;
+        left: 56px;
+        bottom: 344px;
+        margin-left: auto;
+        margin-right: auto;
+    
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    
+        @media screen and (min-width: 1680px) {
+            display: none;
+        }
+}
+
+.hero__image--transparent {
+    position: relative;
     margin-left: auto;
     margin-right: auto;
+    width: 208px;
+    height: 149.27px;
+    left: 0;
+    top: 18px;
 
-    
     @media screen and (min-width: 768px) {
         position: absolute;
         width: 375px;
         height: 321px;
         left: 360px;
+
         top: 85px;
+
 
     }
 
     @media screen and (min-width: 1680px) {
         position: absolute;
-        left: 807px;
-        bottom: 0px;
-        width: 842px;
-        height: 720px;
+        width: 841.3px;
+        height: 602.2px;
+        left: 822.7px;
+        top: 40px;
+    }
+}
+
+.hero__image--animated {
+    position: relative;
+    
+    width: 178px;
+    height: 178px;
+    left: 61px;
+    top: -140px;
+    animation: opacity-animation 7000ms infinite;
+
+    @media screen and (min-width: 480px) {
+        left: 141.16px;
+        top: -140px;
 
     }
+    
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        width: 321.11px;
+        height: 321.09px;
+        left: 396.26px;
+        top: -18px;
+
+    }
+
+    @media screen and (min-width: 1680px) {
+        position: absolute;
+        left: 903.9px;
+        top: 2px;
+        width: 718.96px;
+        height: 718.08px;
+
+    }
+
+    @keyframes opacity-animation {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+      }
 }
