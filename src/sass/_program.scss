@@ -2,45 +2,47 @@
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: var(--primary-text-color);
-      position: relative;
-  
+}
+.container.program__container {
+    position: relative;
 
-      &::after {
-          content: '';
-          width: 176px;
-          height: 137px;
-          background-image: url(../images/mainpic_mobile.png);
-          position: absolute;
-          bottom: 0;
-          right: 0;
+    &::after {
+        content: '';
+        width: 150px;
+        height: 137px;
+        background-image: url(../images/mainpic_mobile.png);
+        position: absolute;
+        bottom: -30px;
+        right: 0;
+    }
+    @media screen and (min-width: 768px) {
+        &::after {
+            content: '';
+            width: 335px;
+            height: 200px;
+            background-image: url(../images/mainpic_tablet.png);
+            position: absolute;
+            bottom: -20px;
+            right: 0;
+          }
       }
-      @media screen and (min-width: 768px) {
-          &::after {
-              content: '';
-              width: 350px;
-              height: 220px;
-              background-image: url(../images/mainpic_tablet.png);
-              position: absolute;
-              bottom: 0;
-              right: 0;
-            }
-        }
 
-         @media screen and (min-width: 1680px) {
-          &::after {
-              content: '';
-              width: 400px;
-              height: 200px;
-              background-image: url(../images/mainpic_desktop.png);
-              position: absolute;
-              bottom: 0;
-              left: 0;
-            }
-        }
+       @media screen and (min-width: 1680px) {
+        &::after {
+            content: '';
+            width: 600px;
+            height: 250px;
+            background-image: url(../images/mainpic_desktop.png);
+            position: absolute;
+            bottom: -40px;
+            left: -20px;
+            
+          }
+      }
 
-        
+      
 
-        
+      
 }
 
 .program__title {
@@ -86,7 +88,7 @@
         
 
         &::before {
-            height: 92%;
+            height: 91%;
         }
     }
 
@@ -97,7 +99,7 @@
         &::before {
             height: 1px;
             width: 100%;
-            top: 145px;
+            top: 105px;
             background-color: var(--text-color-theme-dark);
         }
     }
