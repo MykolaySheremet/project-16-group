@@ -106,6 +106,7 @@
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0.08em;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &::placeholder {
         color: var(--text-color-theme-dark);
@@ -138,6 +139,15 @@
         padding: 23px 10px 23px 24px;
     }
 
+    &:hover,
+    &:focus{
+        border: 1px solid var(--accent-color);
+        box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.84) inset;
+    }
+}
+
+input.contacts-form__input{
+    outline: none;
 }
 
 .contacts-form__inputname {
@@ -175,7 +185,8 @@
     color: var(--text-color-theme-dark);
     background-color: var(--accent-color);
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 
     &:focus,&:hover{
         background-color: #FF6500;
@@ -221,7 +232,6 @@
     transform: translateX(-50%);
     padding: 2px 2px;
     opacity: 0;
-    box-shadow: 0 -2px 3px var(--secondary-light-text-color);
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -268,7 +278,7 @@
     opacity: 0;
     box-shadow: 0 -2px 3px var(--secondary-light-text-color);
     pointer-events: none;
-    transition:  opacity background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) ,background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and(min-width:480px) {
         width: 438px;
